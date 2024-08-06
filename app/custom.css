@@ -1,0 +1,14 @@
+.modifiedscrollbar::-webkit-scrollbar {
+    background-color: rgb(38, 38, 38);
+    width: 5px;
+    height: 8px;
+    border-radius: 50px;
+}
+.modifiedscrollbar::-webkit-scrollbar-thumb{
+    background: rgb(142, 142, 142);
+    border-radius: 50px;
+}
+
+textarea:focus {
+    outline: none; 
+}
