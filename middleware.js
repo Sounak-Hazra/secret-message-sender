@@ -3,12 +3,13 @@ import { usePathname } from 'next/navigation'
  
 export function middleware(request) {
   const path = request.nextUrl.pathname
-  if (path === "/messages") {
+  console.log(path)
+  if (path === "/messages" || path==="/sender") {
     return NextResponse.redirect(new URL('/', request.url))
   }
   
 }
  
 export const config = {
-  matcher: '/messages',
+  matcher: ['/messages','/sender'],
 }
