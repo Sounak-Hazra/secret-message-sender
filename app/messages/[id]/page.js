@@ -28,7 +28,7 @@ const page = ({ params }) => {
   const router = useRouter()
   useEffect(() => {
     setdomain(window.location.href.replace("messages", "sender"))
-    setdomain(window.location.href.replace("http", "https"))
+    setdomain(window.location.href.replace("http", "http"))
     const id = localStorage.getItem("id")
     if (!id) {
       router.push(`/sender/${params.id}`)
