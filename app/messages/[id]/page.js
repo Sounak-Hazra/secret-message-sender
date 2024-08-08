@@ -54,7 +54,7 @@ const page = ({ params }) => {
           <div className=' md:m-5  flex flex-col items-center  gap-3 relative '>
 
             <div className='bg-black border-[.5px] text-white border-gray-800 p-2 md:text-base text-sm  md:w-fit h-fit rounded-md '>
-              Send this message to your frients so that they can send you messages secreately < span className="text-blue-400 underline"><a href={domain}>{`${domain}`}</a></span>
+              Send this message to your frients so that they can send you messages secreately < span className="text-blue-400 break-all underline"><a href={domain}>{ domain}</a></span>
             </div>
             <div className='p-4 w-full flex items-center justify-center gap-3 flex-col'>
               <div className="text-white bg-green-500 p-2 rounded-md "><a href={`whatsapp://send?text=${domain}`} data-action="share/whatsapp/share">Whatsapp</a>
